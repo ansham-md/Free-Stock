@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Stock Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Free Stock Calculator</h1>
+        <p class="info">This app calculates according to the No Loss strategy. It determines the number of shares you can sell to recover your initial investment, allowing you to hold the remaining shares without any worry.</p>
+        <div class="form-group">
+            <label for="stockCode">Stock Code:</label>
+            <input type="text" id="stockCode" placeholder="Enter stock code (e.g., RELIANCE)">
+        </div>
+        <div class="form-group">
+            <label for="numShares">Number of Shares Bought:</label>
+            <input type="number" id="numShares" placeholder="Enter number of shares">
+        </div>
+        <div class="form-group">
+            <label for="buyPrice">Price per Share Bought:</label>
+            <input type="number" id="buyPrice" placeholder="Enter price per share">
+        </div>
+        <button onclick="calculateFreeStock()">Calculate</button>
+        <div id="results">
+            <p id="latestPrice"></p>
+            <p id="sharesToSell"></p>
+        </div>
+        <p class="quote">"An investment in knowledge pays the best interest." - Benjamin Franklin</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
